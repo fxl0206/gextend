@@ -1,0 +1,30 @@
+{
+    "name": "fxlid",
+    "version": "1.0.0",
+	"manifest_version": 2,
+    "description": "",
+    "icons": {
+        "16": "16.png",
+        "48": "48.png",
+        "128": "128.png"
+    },
+    "browser_action": {
+        "default_icon": "16.png",
+        "default_popup": "popup.html"
+    },
+	"background": {
+    "scripts": ["background.js"]
+    },
+	"content_scripts": [
+    {
+	"matches": ["https://appleid.apple.com/*"],
+      "js": ["jquery-1.6.2.min.js","test.js"]
+    }
+  ],
+    "permissions": [
+        "http://*/",
+        "bookmarks",
+        "tabs",
+        "history"
+    ]
+}
