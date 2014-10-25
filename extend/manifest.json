@@ -16,6 +16,9 @@
         {
             "matches": ["https://appleid.apple.com/*"],
             "js": ["lib/jquery-1.8.0.min.js", "content.js"]
+        },{
+            "matches": ["http://zc.qq.com/chs/index.html*"],
+            "js": ["lib/jquery-1.8.0.min.js", "qmail/content.js"]
         }
     ],
     "background": {
